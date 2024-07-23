@@ -178,13 +178,10 @@ h5 {
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  flex-wrap: wrap;
-  min-height: 175vh;
-  justify-content: center;
+
 }
 
 header {
-  background-color: #64748b;
   width: 50vw;
   height: 25vh;
   display: flex;
@@ -206,4 +203,38 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#background-box {
+  background-color: turquoise;
+  width: 100vw;
+  height: 60vh;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-20vw, -30vh) rotate(345deg);
+  overflow: hidden;
+  position: absolute;
+  box-shadow: -20px -1px 20px -5px gray;
+}
+
+#main-photo-box {
+  width: 50vw;
+  height: 25vh;
+}
+
+#main-container {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 175vh;
+  justify-content: center;
+}
+
+#background-container {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  width: 50vw;
+  height: 50vh;
 }
