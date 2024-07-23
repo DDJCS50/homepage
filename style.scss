@@ -178,7 +178,7 @@ h5 {
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-
+  min-height: 175vh;
 }
 
 header {
@@ -192,7 +192,6 @@ header {
 main {
   width: 50vw;
   height: 100vh;
-  background-color: #f8fafc;
   margin: 0;
 }
 
@@ -216,6 +215,7 @@ footer {
   overflow: hidden;
   position: absolute;
   box-shadow: -20px -1px 20px -5px gray;
+  z-index: -1;
 }
 
 #main-photo-box {
