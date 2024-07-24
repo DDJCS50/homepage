@@ -14,3 +14,5 @@ The goal of this project is to create a responsive webpage that works on a varie
 <br>
 [Open link icon](./resources/open-in-new.svg) By: <a href="https://pictogrammers.com/contributor/google/">Google<a>
 <br>
+[Account icon](./resources/account.svg) By: <a href="https://pictogrammers.com/contributor/google/">Google<a>
+<br>
