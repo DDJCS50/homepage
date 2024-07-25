@@ -178,7 +178,6 @@ h5 {
 body {
   font-family: 'Times New Roman', Times, serif;
   display: flex;
-  min-height: 175vh;
   justify-content: center;
 }
 
@@ -265,12 +264,12 @@ header {
 
 main {
   width: 50vw;
-  height: 100vh;
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 16px 50px;
+  padding-bottom: 100px;
 
   h2 {
     align-self: flex-start;
@@ -282,8 +281,6 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    overflow: auto;
-    height: 750px;
     width: auto;
     flex-direction: row;
     gap: 3vw;
@@ -347,6 +344,7 @@ main {
           display: flex;
           justify-content: flex-end;
           align-items: center;
+          gap: 12px;
 
           h3 {
             margin-right: auto;
@@ -359,16 +357,76 @@ main {
 }
 
 footer {
-  background-color: #64748b;
+  background-color: teal;
   width: 50vw;
-  height: 50vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 48px;
+
+  >img {
+    width: 250px;
+    height: 250px;
+    flex: 1;
+  }
+
+  .footer-container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    color: #ffffff;
+    flex: 1;
+    font-size: clamp(14px, 1vw, 18px);
+
+    h2 {
+      font-size: clamp(18px, 2vw, 48px);
+    }
+
+    .address {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .links-footer {
+      display: flex;
+      justify-content: flex-start;
+      gap: 8px;
+
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+
+      .phone {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+      }
+
+      .email {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+      }
+    }
+  }
 }
 
 #background-box {
-  background-color: turquoise;
+  background-color: teal;
   width: 100vw;
   height: 60vh;
   display: inline-block;
@@ -385,7 +443,6 @@ footer {
   font-family: 'Times New Roman', Times, serif;
   display: flex;
   flex-wrap: wrap;
-  min-height: 175vh;
   justify-content: center;
   flex-direction: column;
   background-color: white;
