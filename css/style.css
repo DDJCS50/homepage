@@ -179,6 +179,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   display: flex;
   min-height: 175vh;
+  justify-content: center;
 }
 
 header {
@@ -257,6 +258,85 @@ main {
   width: 50vw;
   height: 100vh;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 50px;
+}
+main h2 {
+  align-self: flex-start;
+  font-size: 2rem;
+}
+main #cardBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: auto;
+  height: 750px;
+  width: auto;
+  flex-direction: row;
+  gap: 3vw;
+  align-content: center;
+  max-width: 50vw;
+  min-width: 600px;
+}
+main #cardBox .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 200px;
+  width: calc(14vw - 36px);
+  background-color: #e2e8f0;
+  box-shadow: 6px 7px 10px -5px gray;
+  min-width: 132px;
+  height: calc(14vw - 36px);
+}
+main #cardBox .card img {
+  width: 25px;
+  height: 25px;
+}
+main #cardBox .card .project-container-upper {
+  background-color: #0069ed;
+  width: 100%;
+  height: 60%;
+  flex: none;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(14px, 2vw, 1.5rem);
+}
+main #cardBox .card .project-container-upper p {
+  text-align: center;
+}
+main #cardBox .card .project-container-lower {
+  padding: 8px;
+  flex: none;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+main #cardBox .card .project-container-lower p {
+  font-size: clamp(12px, 0.5vw, 18px);
+  text-wrap: wrap;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 100%;
+  min-height: 40px;
+  width: 100%;
+  color: #64748b;
+}
+main #cardBox .card .project-container-lower .project-name-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main #cardBox .card .project-container-lower .project-name-container h3 {
+  margin-right: auto;
+  font-size: clamp(14px, 1vw, 18px);
 }
 
 footer {
@@ -279,7 +359,6 @@ footer {
   overflow: hidden;
   position: absolute;
   box-shadow: -20px -1px 20px -5px gray;
-  z-index: -1;
 }
 
 #main-container {
@@ -288,6 +367,9 @@ footer {
   flex-wrap: wrap;
   min-height: 175vh;
   justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  z-index: 0;
 }
 
 #background-container {
@@ -297,8 +379,13 @@ footer {
   width: 50vw;
   height: 50vh;
   z-index: -1;
+  top: 0px;
 }
 
 a:hover {
   cursor: pointer;
+}
+
+html {
+  background-color: black;
 }
