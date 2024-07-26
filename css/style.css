@@ -262,9 +262,33 @@ main {
   padding: 16px 50px;
   padding-bottom: 100px;
 }
-main h2 {
-  align-self: flex-start;
+@media (max-width: 1200px) {
+  main {
+    padding: 16px 1vw;
+    width: 50vw;
+  }
+}
+main .main-header {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+@media (max-width: 1200px) {
+  main .main-header {
+    max-width: calc(350px + 1vw);
+  }
+}
+main .main-header h2 {
   font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4px;
+  padding-left: 1.15vw;
+}
+@media (max-width: 1200px) {
+  main .main-header h2 {
+    padding-left: 0px;
+  }
 }
 main #cardBox {
   display: flex;
@@ -278,6 +302,14 @@ main #cardBox {
   max-width: 50vw;
   min-width: 600px;
 }
+@media (max-width: 1200px) {
+  main #cardBox {
+    height: 100%;
+    max-width: calc(350px + 1vw);
+    min-width: 0px;
+    gap: 1vw;
+  }
+}
 main #cardBox .card {
   display: flex;
   flex-direction: column;
@@ -289,6 +321,11 @@ main #cardBox .card {
   box-shadow: 6px 7px 10px -5px gray;
   min-width: 132px;
   height: calc(14vw - 36px);
+}
+@media (max-width: 1200px) {
+  main #cardBox .card {
+    min-width: 175px;
+  }
 }
 main #cardBox .card img {
   width: 25px;
@@ -451,6 +488,7 @@ footer .footer-container-left .contacts .email {
   flex-direction: column;
   background-color: white;
   z-index: 0;
+  align-items: center;
 }
 
 #background-container {
